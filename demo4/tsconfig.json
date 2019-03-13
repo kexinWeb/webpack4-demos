@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    /* ts-node只支持commonjs规范 */
+    "module": "commonjs",
+    "target": "es5",
+    "esModuleInterop": true,
+  }
+}

@@ -1,1 +1,3 @@
-document.getElementById('app').innerHTML = 'Main: Hello webpack4 !'
+const div = document.createElement('div')
+div.innerHTML = 'Main: Hello webpack4 !'
+document.getElementById('app').appendChild(div)

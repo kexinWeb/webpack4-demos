@@ -1,22 +1,28 @@
 const path = require('path')
 
-module.exports = 
-{
-  mode: 'development',
-  entry: './src/index.js',
-  output: {
-    filename: 'bundle.index.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
-  devServer: {
-    // contentBase: path.resolve(__dirname, 'dist'),
-    port: 9000,
-    before: function(app, server) {
-      console.log('-------------', app)
-      console.log('-------------', server)
+module.exports = [
+  {
+    mode: "development",
+    entry: './src/index.js',
+    output: {
+      filename: 'bundle.index.js',
+      path: path.resolve(__dirname, 'dist')
     },
-    allowedHosts: [
-      '.host.com', // 'host.com' 只会识别host.com，而不能识别其子域名
-    ]
-  } // 只会读取第一个配置，识记
-}
+    devServer: {
+      contentBase: path.resolve(__dirname, 'content_base'),
+      port: 9000,
+    }
+  },
+  {
+    mode: "development",
+    entry: './src/main.js',
+    output: {
+      filename: 'bundle.main.js',
+      path: path.resolve(__dirname, 'dist')
+    },
+    devServer: {
+      contentBase: path.resolve(__dirname, 'content_base'),
+      port: 9001
+    }
+  }
+]

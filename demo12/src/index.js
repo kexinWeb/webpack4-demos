@@ -1,3 +1,1 @@
-module.exports = function ma() {
-  console.log('majiawei')
-}
+document.getElementById('app').innerHTML = 'Index: Hello webpack4 !'

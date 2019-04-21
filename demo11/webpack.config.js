@@ -8,10 +8,6 @@ module.exports = [
       filename: 'bundle.index.js',
       path: path.resolve(__dirname, 'dist')
     },
-    devServer: {
-      contentBase: path.resolve(__dirname, 'content_base'),
-      port: 9000,
-    }
   },
   {
     mode: "development",

@@ -1,0 +1,17 @@
+{
+  "name": "demo1",
+  "version": "1.0.0",
+  "description": "quick start of webpack4",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "author": "liukexin",
+  "license": "ISC",
+  "devDependencies": {
+    "json-loader": "^0.5.7",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
